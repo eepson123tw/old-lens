@@ -1,0 +1,885 @@
+@import url(reset.css);
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Noto Sans, Calisto MT;
+  line-height: 1.6;
+  cursor: default;
+}
+/* -------------------wrapper----------------------- */
+.wrapper {
+  max-width: 1200px;
+  min-width: 428px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+  background: linear-gradient(110deg, #1c1c1c 40%, #fafcf2 60%);
+  position: relative;
+  overflow: hidden;
+}
+/* ----------------------header--------------------- */
+header {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.core_left {
+  background-color: #fafcf2;
+  width: auto;
+}
+.core_left img {
+  display: block;
+  width: 100%;
+}
+
+.core_right {
+  width: auto;
+  height: auto;
+}
+.core_right > a {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 5;
+}
+.core_right > a b {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fafcf2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: black 3px 2px 5px;
+}
+header b:nth-child(1) {
+  transform: translateY(-10px);
+}
+header b:nth-child(3) {
+  transform: translateY(10px);
+}
+/* -----------------menu-------------- */
+
+#menu {
+  width: 365px;
+  height: 85vh;
+  background-color: white;
+  opacity: 0.9;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  display: none;
+  top: 120px;
+  right: 0;
+  z-index: 6;
+  box-shadow: #bdc0ba 1px 1px 1px 3px;
+}
+#menu li {
+  position: relative;
+}
+#menu li a {
+  display: block;
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+  color: #bdc0ba;
+  text-shadow: black 1px 1px 1px;
+  transition: 0.5s;
+}
+#menu a:hover {
+  background-color: #1c1c1c;
+  color: #fcfaf2;
+}
+#menu ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0;
+  z-index: -200;
+}
+#menu :hover > ul {
+  display: flex;
+  flex-direction: column;
+  left: -100%;
+  opacity: 1;
+  z-index: 5;
+}
+
+#menu ul a {
+  margin-left: -1em;
+}
+#menu ul:hover a {
+  margin-left: 0;
+}
+/* ------------------core----------------------- */
+
+main {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.main_pic {
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  background-size: contain;
+  background-position: 90% 40%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url(../img/jappn_style/mainbg.jpg);
+}
+.main_text {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  width: 50%;
+  height: auto;
+}
+.main_text h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fcfaf2;
+  margin-bottom: 50px;
+  text-shadow: black 1px 1px 10px;
+}
+.main_text p:nth-of-type(1) {
+  width: 100%;
+  line-height: 2;
+  font-size: 1.8rem;
+  color: #fcfaf2;
+  margin-bottom: 150px;
+  text-shadow: black 1px 1px 10px;
+}
+.main_text p:nth-of-type(2) {
+  display: block;
+  font-weight: bold;
+  text-indent: 110px;
+  font-size: 1.8rem;
+  color: #fcfaf2;
+  text-shadow: #fafcf2 1px 1px 20px;
+}
+/*---------------------阿富汗少女鏡--------------------- */
+
+.japan_style {
+  width: 100%;
+  height: auto;
+  margin-top: 1050px;
+  padding-top: 20px;
+  position: relative;
+  box-sizing: border-box;
+  background-attachment: fixed;
+}
+.japan_style a {
+  display: block;
+  width: 13%;
+  height: auto;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #fcfaf2;
+}
+
+.japan_style > ul {
+  width: 100%;
+  height: 750px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.japan_style li {
+  margin-bottom: 20px;
+}
+.japan_style li:nth-of-type(3) {
+  background-position: center;
+  width: 30%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.japan_style img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.japan_style img:hover {
+  transform: rotate(30deg);
+}
+
+.japan_style #text h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fafcf2;
+}
+.japan_style #text h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fafcf2;
+}
+
+.japan_style #text p:nth-of-type(1) {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fafcf2;
+}
+
+.japan_style #text p:nth-of-type(2) {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fafcf2;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.japan_style #text p:nth-of-type(3) {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fafcf2;
+  line-height: 2;
+}
+/* --------------50mm--------------- */
+
+.japan_style1 {
+  padding: 0 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.japan_style1 img {
+  flex-grow: 1;
+  width: 50%;
+  display: block;
+  box-shadow: #bdc0ba 1px 1px 10px;
+}
+.japan_style1_text {
+  flex-grow: 1;
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+.japan_style1_text h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.japan_style1_text h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.japan_style1_text p:nth-of-type(1) {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.japan_style1_text p:nth-of-type(2) {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+  line-height: 2;
+  text-shadow: #1c1c1c 1px 1px 10px;
+  font-weight: 800;
+}
+
+/* --------------------------50mm photo-------------------------- */
+
+.photo_core {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.photo_core ul {
+  width: 100%;
+  height: 500px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  align-content: center;
+}
+.photo_core li {
+  width: 30%;
+  height: 45%;
+}
+.photo_core img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(255, 255, 255, 0.3) 1px 1px 3px;
+  transition: 1.5s;
+  filter: brightness(0.7);
+  transform: scale(0.6);
+  cursor: pointer;
+}
+
+.photo_core img:hover {
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 10px;
+  filter: brightness(1);
+}
+/* -----------------------28mm---------------------- */
+
+.japan_style2 {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.japan_style2 img {
+  width: 40%;
+  display: block;
+  width: 100%;
+  flex-grow: 1;
+  box-shadow: #bdc0ba 1px 1px 10px;
+}
+.japan_style2_text {
+  padding-top: 50px;
+  flex-grow: 1;
+}
+
+.japan_style2_text h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.japan_style2_text h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.japan_style2_text p:nth-of-type(1) {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+}
+.japan_style2_text p:nth-of-type(2) {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  text-align: center;
+  color: #1c1c1c;
+  text-shadow: #1c1c1c 1px 1px 5px;
+  line-height: 2;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+/* ---------------ul區塊------------------ */
+
+.japan_style2_text > ul {
+  margin-left: 10px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.japan_style2_text li {
+  width: 100px;
+  height: 100%;
+  transition: 1s;
+}
+.japan_style2_text img {
+  display: block;
+  box-shadow: none;
+}
+
+.japan_style2_text > ul:hover li:nth-last-of-type(4) {
+  transform: translateX(70px);
+}
+.japan_style2_text > ul:hover li:nth-last-of-type(3) {
+  transform: translateX(16px);
+}
+.japan_style2_text > ul:hover li:nth-last-of-type(2) {
+  transform: translateX(-38px);
+}
+.japan_style2_text > ul:hover li:nth-last-of-type(1) {
+  transform: translateX(-92px);
+}
+/* ---------------------------------------------------------------- */
+
+.recomand {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.recomand:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 400px solid transparent;
+  border-left: 600px solid rgba(0, 0, 0, 0.1);
+  border-right: 600px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+}
+.recomand_left {
+  padding: 75px 50px;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.recomand_left h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+.recomand_left h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+.recomand_left a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  color: #1c1c1c;
+  transition: 1s;
+}
+
+.recomand_right {
+  padding: 75px 50px;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.recomand_right h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+.recomand_right h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+.recomand_right a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  color: #1c1c1c;
+  transition: 1s;
+}
+
+.recomand_right a:hover,
+.recomand_left a:hover {
+  transform: scale(1.3);
+  font-weight: bold;
+}
+/*------------footer------------------------------  */
+footer {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 1%;
+  background-color: #fcfaf2;
+  box-sizing: border-box;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer li {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: center;
+  }
+  .core_right > a {
+    top: 30px;
+    right: 200px;
+  }
+  .main_text h1 {
+    margin: 10px;
+  }
+  .main_text p:nth-of-type(1) {
+    margin: 30px;
+  }
+  .main_text p:nth-of-type(2) {
+    text-indent: 0px;
+    text-align: center;
+  }
+  .japan_style a {
+    width: auto;
+  }
+  .japan_style > ul {
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .japan_style li:nth-of-type(3) {
+    width: 80%;
+    order: -1;
+    position: relative;
+    z-index: 2;
+  }
+  .japan_style li:nth-of-type(3)::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: 1px 1px 10px bisque;
+    z-index: -1;
+  }
+  .japan_style li {
+    margin: 20px 40px;
+  }
+  .japan_style li:nth-of-type(3n + 1) {
+    display: none;
+  }
+  /* --------------------------------------- */
+  .japan_style1 {
+    margin-top: 50px;
+  }
+  .japan_style1 img {
+    display: none;
+  }
+  .japan_style1_text {
+    position: relative;
+    z-index: 2;
+  }
+  .japan_style1_text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fafcf2;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 1px 1px 10px bisque;
+  }
+  .japan_style1_text h1,
+  .japan_style1_text h2,
+  .japan_style1_text p:nth-of-type(2),
+  .japan_style1_text p:nth-of-type(1) {
+    text-shadow: none;
+  }
+  /* ------- */
+  .japan_style2 {
+    margin: 0;
+  }
+  .japan_style2 img {
+    display: none;
+  }
+  .japan_style2_text {
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+  }
+  .japan_style2_text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fafcf2;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 1px 1px 10px bisque;
+  }
+  .japan_style2_text h1,
+  .japan_style2_text h2,
+  .japan_style2_text p:nth-of-type(1),
+  .japan_style2_text p:nth-of-type(2) {
+    text-shadow: none;
+  }
+  .japan_style2_text ul {
+    width: 100%;
+    height: 60vh;
+    margin: 20px 0;
+    background-image: url(../img/pinterest/fall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+/*------------768px------------------------ */
+@media screen and (max-width: 768px) {
+  .core_right > a {
+    right: 50px;
+  }
+  #menu a {
+    font-size: 3vh;
+    line-height: 10vh;
+  }
+  .main_text {
+    width: 80%;
+    position: relative;
+    left: 50px;
+    z-index: 2;
+    text-align: center;
+    padding: 60px;
+    box-sizing: border-box;
+  }
+  .main_text::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+  }
+  .main_text p:nth-of-type(1) {
+    margin: 0;
+  }
+  .main_text p:nth-of-type(2) {
+    margin-top: 20px;
+  }
+  .main_text h1 {
+    font-size: 7vh;
+    color: #bdc0ba;
+  }
+  .main_text p:nth-of-type(1) {
+    line-height: 1.5;
+    color: #bdc0ba;
+  }
+  .main_pic {
+    height: 700px;
+  }
+  .japan_style {
+    margin-top: 500px;
+  }
+
+  .japan_style1_text {
+    width: 80%;
+  }
+  .japan_style1_text p:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+  .photo_core li {
+    width: 60%;
+  }
+  .photo_core img {
+    transform: none;
+  }
+  .photo_core li:nth-of-type(2n + 4) {
+    display: none;
+  }
+  .recomand {
+    margin-top: 50px;
+  }
+  .recomand_left,
+  .recomand_right {
+    padding: 10px;
+    font-size: 10vh;
+  }
+  .recomand:after {
+    border: none;
+  }
+}
+/* 428px */
+@media screen and (max-width: 428px) {
+  header {
+    position: unset;
+    margin-bottom: 20px;
+  }
+  .core_right > a {
+    top: 50px;
+  }
+  .main_pic {
+    display: none;
+  }
+  main {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  #menu {
+    width: 50%;
+  }
+  #menu li a {
+    font-size: 3vh;
+    line-height: 10vh;
+  }
+  .main_text {
+    position: unset;
+    padding: unset;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .main_text::after {
+    display: none;
+  }
+  .main_text p:nth-of-type(1) {
+    position: relative;
+  }
+  .main_text p:nth-of-type(1)::after {
+    content: "";
+    width: 100%;
+    height: 200%;
+    background-image: url(../img/jappn_style/mainbg.jpg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-position: center right;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  .japan_style img {
+    border-radius: 0;
+  }
+  .japan_style a {
+    margin: 50px 0 20px 10px;
+    position: unset;
+  }
+
+  /* ------ */
+  .japan_style {
+    margin: 0;
+  }
+  .japan_style > ul {
+    padding: 0;
+  }
+
+  .photo_core ul {
+    flex-wrap: unset;
+  }
+  .photo_core {
+    margin-bottom: 50px;
+  }
+  .photo_core li {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .photo_core li:nth-of-type(1n + 3) {
+    display: none;
+  }
+  .japan_style2_text h1,
+  .japan_style2_text h2,
+  .japan_style2_text p:nth-of-type(1),
+  .japan_style2_text p:nth-of-type(2) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .japan_style2_text p:nth-of-type(2) {
+    width: 100%;
+  }
+  .japan_style2_text ul {
+    height: 50vh;
+  }
+  .recomand_left h1,
+  .recomand_right h1 {
+    font-size: 3vh;
+  }
+  .recomand_left h2,
+  .recomand_right h2,
+  .recomand_left a,
+  .recomand_right a {
+    font-size: 2vh;
+  }
+  footer ul {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  footer {
+    padding: unset;
+    font-size: 1vh;
+  }
+}

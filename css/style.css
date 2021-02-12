@@ -1,0 +1,1607 @@
+@import url(reset.css);
+
+body {
+  font-family: Noto Sans, Calisto MT;
+  line-height: 1.6;
+  cursor: default;
+}
+html {
+  font-size: 62.5%;
+}
+/*--------------------------------------------------*/
+.wrapper {
+  max-width: 1300px;
+  width: 1200px;
+  min-width: 428px;
+  margin: 0 auto;
+  background-color: #fcfaf2;
+}
+.activted{
+  transform: translateX(100px)  scale(1.2);
+}
+/*-------------頂端 logo menu-------------------*/
+header {
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+header img {
+  display: block;
+  margin: 0 auto;
+}
+header > a {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+header b{
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: black 3px 2px 5px;
+}
+header b:nth-child(1) {
+  transform: translateY(-10px);
+}
+header b:nth-child(3) {
+  transform: translateY(10px);
+}
+.activemove{
+  transform: none;
+}
+/* ------------------------js動作 class--------------------- */
+.hide {
+  display: none;
+  width: 30%;
+  height: 85vh;
+  background-color: white;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 100;
+  transition: 2s;
+}
+
+/*------------------------選單-----------------------------*/
+#menu {
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+.active{
+  background-color: #1c1c1c;
+  color: #fcfaf2;
+}
+#menu li {
+  position: relative;
+}
+#menu:hover li {
+}
+
+#menu a {
+  display: block;
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+  color: #bdc0ba;
+  text-shadow: black 1px 1px 1px;
+  transition: 0.5s;
+}
+
+#menu a:hover {
+  background-color: #1c1c1c;
+  color: #fcfaf2;
+}
+#menu ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0;
+  z-index: -200;
+}
+#menu :hover > ul {
+  display: flex;
+  flex-direction: column;
+  left: -100%;
+  opacity: 1;
+  z-index: 5;
+}
+
+#menu ul a {
+  margin-left: -1em;
+}
+#menu ul:hover a {
+  margin-left: 0;
+}
+/*--------------------中間輪播圖----------------------*/
+
+.hero {
+  background-image: url(../img/homepageimg/sakurabg.jpg);
+  height: 500px;
+  box-sizing: border-box;
+  filter: sepia(20%);
+  box-shadow: black 3px 2px 5px;
+  transition: 1s;
+  position: relative;
+}
+.hero:hover {
+  filter: sepia(0);
+}
+.hero h1 {
+  position: absolute;
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 4.2rem;
+  color: #fcfaf2;
+  margin-bottom: 50px;
+  text-shadow: black 3px 2px 5px;
+  z-index: 2; 
+  top: 0;
+  bottom:200px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.hero p {
+   display: block;
+   position: absolute;
+  height: 50px;
+  top: 0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2.4rem;
+  color: #fcfaf2;
+  text-shadow: black 3px 2px 5px; */
+} 
+/*--------------------------scroll-----------------------------------=*/
+.scroll {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 0 auto;
+}
+
+.scroll h1 {
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  writing-mode: vertical-lr;
+}
+.scroll h1:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 100px;
+  background-color: gray;
+  animation: scroll 2s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: gray;
+  }
+}
+/* --------------------------side_menu-------------------------------------- */
+
+.side_menu {
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 1000;
+  top: 200px;
+  left: 20px;
+}
+.side_menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.side_menu li {
+  line-height: 2;
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+.side_menu a {
+  text-decoration: none;
+  color: #fafcf2;
+  margin-left: 0;
+  transition: 1s;
+}
+.side_menu li:hover {
+  background-color: #bdc0ba;
+  
+}
+.side_menu li:hover > a {
+  margin-left: -1em;
+  color: #1c1c1c;
+}
+.side_menu > a {
+  display: none;
+}
+
+/*----------------------日式銀鹽---------------------------------*/
+.jappan-style {
+  width: 100%;
+  height: 800px;
+  padding: 50px 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+#jappan_bg {
+  display: block;
+  margin-top: 0px;
+  width: 750px;
+  height: 660px;
+}
+.japan-text {
+  position: absolute;
+  top: 150px;
+  left: 180px;
+  z-index: 100;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.japan-text h1 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  font-size: 3.2rem;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+.japan-text h1:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin-left: 15px;
+  background-color: #1c1c1c;
+}
+.japan-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.japan-text p {
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.jappan-style span {
+  color: #fcfaf2;
+}
+
+#jappan_view {
+  position: absolute;
+  top: 120px;
+  left: 449px;
+  box-shadow: black 3px 2px 5px;
+  z-index: 2;
+  filter: grayscale(50%);
+  transition: 0.5s;
+}
+#jappan_view:hover {
+  filter: grayscale(0);
+}
+
+.japan-text a{
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+}
+
+.japan-text a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafcf2;
+}
+
+/*----------------------西式重烘------------------------------*/
+
+.west-style {
+  padding: 0 50px 0 50px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.west-style img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: black 3px 2px 5px;
+  border-radius: 15px;
+}
+.west-style-text {
+  padding: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 296px;
+  left: 580px;
+  width: 500px;
+  height: 270px;
+  box-shadow: black 3px 2px 5px;
+  border-radius: 15px;
+  background-image: url(../img/homepageimg/weststyle570px_bg.jpg);
+}
+
+.west-style-text h1 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  font-size: 3.2rem;
+  margin: 0 auto;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.west-style-text h1:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin-left: 15px;
+  background-color: #1c1c1c;
+}
+.west-style-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.west-style-text p {
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+  height: 80px;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+.west-style-text a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.west-style-text a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #1c1c1c;
+}
+/*------------------------微距特調---------------------------*/
+
+.small-style {
+  width: 75%;
+  margin: 50px auto;
+}
+.small-style ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.small-style li {
+  margin-top: 20px;
+}
+.small-style a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+#small-1 {
+  order: 1;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background-image: url(../img/homepageimg/small200px1.jpg);
+  border-radius: 50%;
+  box-shadow: black 3px 2px 5px;
+}
+
+
+
+#small-2 {
+  order: 2;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background-image: url(../img/homepageimg/small200px2.jpg);
+  border-radius: 50%;
+  box-shadow: black 3px 2px 5px;
+}
+
+
+
+#small-3 {
+  order: 4;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background-image: url(../img/homepageimg/small200px3.jpg);
+  border-radius: 50%;
+  box-shadow: black 3px 2px 5px;
+}
+
+#small-4 {
+  order: 5;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background-image: url(../img/homepageimg/small200px4.jpg);
+  border-radius: 50%;
+  box-shadow: black 3px 2px 5px;
+}
+
+#small-5 {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  background-image: url(../img/homepageimg/small200px5.jpg);
+  border-radius: 50%;
+  box-shadow: black 3px 2px 5px;
+}
+
+.small-style-text {
+  order: 3;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  width: 1000px;
+  height: 300px;
+  background-image: url(../img/homepageimg/small465px_bg.jpg);
+}
+
+.small-style-text h1 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 3.2rem;
+  margin: 0 auto;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+.small-style-text h1:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin-left: 25px;
+  background-color: #1c1c1c;
+}
+.small-style-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.small-style-text p {
+  display: block;
+  margin: 0 auto;
+  width: 450px;
+  height: 80px;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+.small-style-text a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.small-style-text a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #1c1c1c;
+}
+/*-----------------------------相機模擬----------------------------*/
+
+main {
+  margin-top: 50px;
+  padding: 50px;
+  box-sizing: border-box;
+  background: linear-gradient(-110deg, #ececec 40%, #bdc0ba 60%);
+  border-radius: 10px;
+  position: relative;
+}
+main img {
+  border-radius: 15px;
+  box-shadow: gray 5px 5px 5px;
+}
+/* ----------------------------------------------------------- */
+.btn_style {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+.btn_style ul {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn_style a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.btn_style ul li {
+  box-shadow: 1px 1px 10px gray;
+}
+.btn_style ul li:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(10deg, rgba(230, 8, 8, 0.6) 5%, red 99%);
+  border-radius: 200px;
+}
+.btn_style ul li:nth-of-type(2) {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(
+    10deg,
+    rgba(9, 219, 9, 0.6) 5%,
+    rgb(93, 219, 9) 99%
+  );
+  border-radius: 200px;
+}
+.btn_style ul li:nth-of-type(3) {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 200px;
+}
+
+.main-text {
+  padding-top: 100px;
+  width: 20%;
+  float: right;
+}
+.main-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1c1c1c;
+}
+.main-text p {
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #1c1c1c;
+}
+#choose {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#choose li {
+  margin-right: 20px;
+  font-size: 1.8rem;
+  line-height: 2;
+  color: #1c1c1c;
+  text-decoration: none;
+  cursor: pointer;
+}
+#choose li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}
+
+/* ------------------------------------------------- */
+.red_on {
+  background: linear-gradient(110deg, red 30%, rgba(0, 0, 0, 0.1) 70%);
+}
+.green_on {
+  background: linear-gradient(110deg, green 30%, rgba(0, 0, 0, 0.1) 70%);
+}
+.white_on {
+  background: linear-gradient(110deg, white 30%, rgba(0, 0, 0, 0.1) 70%);
+}
+
+/*-----------------------推薦店家------------------------------*/
+.recommend {
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.recommend h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.recommend h1:first-child:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 10px;
+  background-color: #1c1c1c;
+}
+
+.recommend h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+#recommend-core {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#recommend-core li {
+  padding: 10px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+.recommend-img {
+  width: 100%;
+  position: relative;
+}
+.recommend-img h2 {
+  text-shadow: none;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  color: transparent;
+  border-radius: 20px;
+  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.3);
+  opacity: 0.9;
+  transition: 0.8s;
+}
+
+.recommend-img img {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+#recommend-core h3 {
+  font-weight: bold;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+#recommend-core h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  text-shadow: none;
+  margin-bottom: 10px;
+}
+#recommend-core p {
+  font-size: 1.2rem;
+}
+.recommend a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.recommend a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fcfaf2;
+}
+/* ------------------------玩家推薦區--------------------- */
+.recommend_player {
+  margin-top: 50px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 8%;
+  background-image: url(../img/homepageimg/command_bg1200px.jpg);
+}
+.recommend_player h1 {
+  font-size: 2.4rem;
+  margin-top: 150px;
+  text-align: center;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  text-shadow: white 1px 2px 10px;
+}
+.recommend_player h1:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 10px;
+  background-color: #1c1c1c;
+  box-shadow: gray 5px 5px 5px;
+}
+.recommend_player h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1c1c1c;
+  text-shadow: white 1px 2px 10px;
+}
+.recommend_player a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.recommend_player a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fafcf2;
+}
+/* ----------------------------老鏡漫旅成員們----------------------------- */
+.member {
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.member h1:first-child {
+  display: block;
+  width: 100%;
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #1c1c1c;
+}
+.member_task {
+  width: 50%;
+}
+.member_task img {
+  display: block;
+  margin: 0 auto;
+}
+.member_task p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+.member_task ul {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+.member_task ul li {
+  margin-left: 20px;
+}
+
+.member_task li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: 0.9;
+  border-radius: 50%;
+  box-shadow: black 1px 2px 5px;
+}
+#icon1 {
+  background-image: url(../img/homepageimg/icon-sprites-29.jpg);
+  background-position: -51px -50px;
+}
+#icon2 {
+  background-image: url(../img/homepageimg/icon-sprites-29.jpg);
+  background-position: -222px -50px;
+}
+#icon3 {
+  background-image: url(../img/homepageimg/icon-sprites-29.jpg);
+  background-position: -336px -50px;
+}
+#icon4 {
+  background-image: url(../img/homepageimg/icon-sprites-29.jpg);
+  background-position: -394px -50px;
+}
+#icon1:hover {
+  background-position: -51px -125px;
+}
+#icon2:hover {
+  background-position: -222px -125px;
+}
+#icon3:hover {
+  background-position: -336px -125px;
+}
+#icon4:hover {
+  background-position: -394px -125px;
+}
+
+.member_text {
+  width: 50%;
+}
+.member_text ul {
+  display: flex;
+  justify-content: space-between;
+}
+.member_text li {
+  margin-right: 20px;
+  width: 50%;
+  padding: 10px;
+  padding-bottom: 20%;
+}
+.member_text p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.member_text img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: black 1px 2px 5px;
+}
+.member_text h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+/* ---------------------------gototop--------------------------------- */
+.gototop {
+  width: 10%;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 100;
+}
+.gototop a {
+}
+.gototop img {
+  display: block;
+  width: 50%;
+  animation: rings 1s linear infinite alternate;
+}
+@keyframes rings {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+/* audio */
+figure{
+  opacity: 0.5;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+figcaption{
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+audio{
+  background-color: transparent;
+  border: 2px dotted gray;
+}
+
+/* ------------------------footer------------------------------ */
+footer {
+  background-color: gray;
+  height: 110px;
+}
+footer ul {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+footer li {
+}
+footer li h1 {
+  color: #fcf2fc;
+}
+footer li:first-child {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+footer button {
+  border: none;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+}
+footer button a {
+  text-decoration: none;
+  color: #bdc0ba;
+  font-size: 2.4rem;
+  text-shadow: 1px 0px 1px black;
+  padding: 20px;
+}
+footer button:hover {
+  background-color: #fcfaf2;
+  color: #1c1c1c;
+}
+footer a:hover {
+  transform: rotate(360deg);
+}
+/* --------------------------RWD------------------------------- */
+
+@media all and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* ----------------------gototop----------------------- */
+  .gototop {
+    position: fixed;
+    right: 50px;
+    bottom: 60%;
+  }
+  .gototop img {
+    width: 5vh;
+  }
+  /* --------------------------menu------------------------- */
+  .hide {
+    height: 50vh;
+  }
+
+  /* -------------------日式銀鹽----------------------- */
+  .jappan-style {
+    padding: 10px 0;
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #jappan_bg {
+    width: 80vh;
+  }
+  #jappan_view {
+    top: 100px;
+    left: 300px;
+    width: 50vh;
+  }
+  .japan-text h1 {
+    display: inline;
+    color: #fafcf2;
+  }
+  .japan-text h1:after {
+    margin: 10px auto;
+    background-color: #fafcf2;
+  }
+  .japan-text h2,
+  .japan-text p {
+    color: #fafcf2;
+  }
+  .japan-text {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .japan-text a {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  /* ----------------------西式重烘------------------------ */
+  .west-style {
+    padding: 20px;
+    position: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .west-style img {
+    width: 30%;
+    order: 2;
+  }
+  .west-style-text {
+    position: unset;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    order: 0;
+    margin-bottom: 30px;
+  }
+
+  /* ------------------------------焦段效果介紹------------------------------------------ */
+
+  main {
+    margin: 0;
+    padding: 10px;
+  }
+  main img {
+    width: 50%;
+  }
+  .main-text {
+    width: 40%;
+    padding: 10px;
+    padding-top: 70px;
+  }
+  /* -------------------------------------------------玩家推薦----------------------------------- */
+  .recommend_player {
+    margin-top: 10px;
+    background-position: 50% 50%;
+  }
+  .recommend_player h1 {
+    margin-top: 50px;
+  }
+  .recommend_player h1:after {
+    margin: 20px auto;
+  }
+  /* ----------------------------------------老鏡漫游--------------------------- */
+  .member {
+    margin-top: 20px;
+    height: 80%;
+  }
+  .member_text li {
+    width: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* ----------------------gototop----------------------- */
+  .gototop {
+    position: fixed;
+    right: 50px;
+    bottom: 10%;
+  }
+  .gototop img {
+    width: 7vh;
+  }
+  /* --------------------------menu------------------------- */
+  .hide {
+    height: auto;
+  }
+  #menu a {
+    font-size: 3vh;
+    line-height: 10vh;
+  }
+
+  /* -------------------日式銀鹽----------------------- */
+  .jappan-style {
+    height: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #jappan_bg {
+    display: none;
+  }
+  #jappan_view {
+    position: unset;
+    width: 100%;
+    height: 100%;
+  }
+
+  .japan-text h1 {
+    display: inline;
+    color: #fafcf2;
+  }
+  .japan-text h1:after {
+    margin: 10px auto;
+    background-color: #fafcf2;
+  }
+  .japan-text h2,
+  .japan-text p {
+    color: #fafcf2;
+    line-height: 2;
+  }
+  .japan-text {
+    display: block;
+    position: unset;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .jappan-style a {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  /* ----------------------西式重烘------------------------ */
+  .west-style {
+    padding: 35px;
+    position: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .west-style a{ 
+    order: 2;
+  }
+  .west-style img {
+    width: 100%;
+
+  }
+  .west-style-text {
+    position: unset;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    order: 0;
+    margin-bottom: 30px;
+  }
+  /* ---------------------------------------微距------------------------------------------- */
+
+  .small-style-text {
+    margin-top: 20px;
+  }
+
+  /* ------------------------------焦段效果介紹------------------------------------------ */
+
+  main {
+    margin: 0;
+    padding: 10px;
+  }
+  main img {
+    margin-top: 40px;
+    width: 50%;
+  }
+  .main-text {
+    width: 40%;
+    padding: 10px;
+    line-height: 2;
+    padding-top: 70px;
+  }
+  /* -------------------------------------------------玩家推薦----------------------------------- */
+  .recommend_player {
+    margin-top: 10px;
+    background-position: 50% 50%;
+  }
+  .recommend_player h1 {
+    margin-top: 50px;
+  }
+  .recommend_player h1:after {
+    margin: 20px auto;
+  }
+  /* ----------------------------------------老鏡漫游--------------------------- */
+  .member {
+    margin-top: 20px;
+    height: 80%;
+  }
+  .member_task ul li {
+    display: none;
+  }
+  .member_text ul {
+  }
+  .member_text li:first-child {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    color: #1c1c1c;
+  }
+  .member_text li:first-child::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #ececec;
+    position: absolute;
+    opacity: 0.8;
+    transform: rotate(-30deg);
+    z-index: -1;
+    top: -15%;
+    left: 25%;
+  }
+
+  .member_text li:nth-child(1n + 2) {
+    display: none;
+  }
+  .member_task {
+    width: 45%;
+  }
+}
+
+/* ---------------768px--------------------- */
+
+@media all and (max-width: 768px) {
+  /* flex wrapper */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  /* ----------------------header---------------------------- */
+  header {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    order: -5;
+  }
+  /* ----------------------menu--------------------- */
+  #menu {
+    width: 50vh;
+  }
+  .side_menu {
+    top: 35%;
+    padding: 0;
+    width: auto;
+    display: flex;
+    background-color: transparent;
+  }
+  .side_menu > a {
+    height: 70px;
+    display: block;
+    margin-right: 10px;
+    padding: 10px;
+  }
+  .side_menu .fab {
+    font-size: 7vh;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+  }
+  .side_menu .fab::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 1px 0px 4px gray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+  }
+
+  .side_menu li:nth-child(3n + 4) {
+    display: none;
+  }
+
+  .side_menu a ~ ul {
+    display: none;
+  }
+  .side_menu li a {
+    margin: 0;
+    line-height: normal;
+    text-align: center;
+    color: #bdc0ba;
+  }
+  .side_menu:hover a ~ ul {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    width: 130px;
+  }
+  /* -------------------主視覺區塊--------------------- */
+  .hero {
+    height: 500px;
+    padding: 30px;
+    order: -4;
+    background-position: 50% 80%;
+  }
+  .hero h1 {
+    text-align: right;
+  }
+  .hero p {
+    display: block;
+    font-size: 1.8rem;
+    text-align: right;
+  }
+  /* -------------------------scroll 區塊取消-------------------------------- */
+  .scroll {
+    display: none;
+  }
+
+  /* --------------------------------japan 區塊----------------------------------------- */
+
+  .jappan-style {
+    margin-top: 20px;
+    width: 100%;
+    height: 20%;
+    padding: 0;
+  }
+  .japan-text {
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    column-count: 1;
+    column-gap: 30px;
+    line-height: 0;
+    padding: 50px;
+    color: #1c1c1c;
+    background-color: unset;
+  }
+  #jappan_view {
+    /* display: none; */
+    width: 50%;
+  }
+  .japan-text h1 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #1c1c1c;
+    z-index: 1;
+  }
+  .japan-text h1:after {
+    position: absolute;
+    top: 0;
+    margin: 30px auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1c1c1c;
+    z-index: 1;
+  }
+  .japan-text p {
+    padding: 20px;
+    line-height: 2;
+    color: #1c1c1c;
+    position: relative;
+    z-index: 0;
+  }
+  .japan-text h2 {
+    color: #1c1c1c;
+    position: relative;
+    z-index: 1;
+  }
+  .jappan-style a{
+    position: relative;
+    z-index: 1;
+  }
+  .japan-text p::after {
+    content: "";
+    width: 70%;
+    height: 100%;
+    background-image: url(../img/homepageimg/weststyle570px_bg.jpg);
+    transform: rotate(50deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+  }
+  .japan-text br,
+  span {
+    display: none;
+  }
+  /* --------------------west區塊------------------------------------ */
+
+  .west-style-text {
+    background-image: unset;
+    box-shadow: unset;
+    position: relative;
+    z-index: 2;
+    column-count: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .west-style-text::after {
+    content: "";
+    width: 40%;
+    height: 50%;
+    background-image: url(../img/homepageimg/weststyle570px_bg.jpg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(50deg);
+    z-index: -1;
+  }
+  .west-style-text h1 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #1c1c1c;
+  }
+  .west-style-text h1:after {
+    position: absolute;
+    top: 0;
+    margin: 55px auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1c1c1c;
+  }
+
+  .west-style a:nth-of-type(1n+2) {
+    display: none;
+  }
+  .west-style img {
+    width: 100%;
+  }
+  .west-style-text p {
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+  }
+  .west-style-text a {
+    margin: 0;
+    align-self: center;
+  }
+  /* -------------------------smallstyle------------------------------- */
+  .small-style {
+    order: -3;
+    width: 80%;
+  }
+  .small-style li {
+    margin: 20px 0;
+  }
+  .small-style li:nth-child(2n + 1) {
+    display: none;
+  }
+  .small-style-text {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: none;
+    position: relative;
+    z-index: 2;
+  }
+  .small-style-text::after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    background-image: url(../img/homepageimg/weststyle570px_bg.jpg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(50deg);
+    z-index: -1;
+  }
+  .small-style-text p {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  .small-style-text a {
+    align-self: flex-end;
+  }
+
+  /* ----------相機區消失-------------- */
+
+  main {
+    display: none;
+  }
+  /* ---------------------------------------- */
+  .recommend-img img {
+    width: 50%;
+    margin: auto;
+  }
+  #recommend-core h3 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  #recommend-core li:nth-child(2n + 1) {
+    display: none;
+  }
+  #recommend-core li {
+    padding: 30px;
+  }
+  .recommend{
+    margin: 0;
+  }
+  footer {
+    background-color: #ececec;
+  }
+  footer li h1 {
+    color: #1c1c1c;
+  }
+  footer li {
+    margin-bottom: 10px;
+  }
+}
+/* ------------------------------------------ */
+@media screen and (max-width: 430px) {
+  .japan-text{
+    width:auto;
+  }
+  #menu a {
+    font-size: 3vh;
+    line-height: 10vh;
+  }
+  #menu {
+    width: 50%;
+  }
+}

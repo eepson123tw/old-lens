@@ -1,0 +1,366 @@
+@import url(reset.css);
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Noto Sans, Calisto MT;
+  line-height: 1.6;
+  cursor: default;
+}
+/* -------------------wrapper----------------------- */
+.wrapper {
+  max-width: 1200px;
+  min-width: 428px;
+  height: auto;
+  margin: 0 auto;
+  background: linear-gradient(115deg, #fafcf2 40%, #bdb0ba 60%) center center/
+    100% 100%;
+  overflow: hidden;
+}
+
+.contact_us_page {
+  margin: 50px 0;
+  width: 100%;
+  height: 600px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.contact_core {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fafcf2;
+  display: flex;
+  justify-content: center;
+  box-shadow: #1c1c1c 1px 1px 10px;
+}
+.coreX_left {
+  width: 30%;
+  height: 400px;
+  margin-right: 20px;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.coreX_left h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: black 1px 1px 1px;
+}
+.coreX_left h1:first-letter {
+  font-size: 3.2rem;
+  color: #bdb0ba;
+  text-shadow: black 1px 1px 1px;
+}
+.coreX_left h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+input {
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  width: 120px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+input:focus {
+  background-color: white;
+  transform: scale(1.01);
+  transition: 1s;
+  color: #1c1c1c;
+}
+#comannd-text {
+  width: 200px;
+  height: 150px;
+}
+
+.coreX_right {
+}
+.fa-map-marker-alt,
+.fa-phone-square-alt,
+.fa-fax {
+  font-size: 1.8rem;
+  color: #1c1c1c;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.fa-map-marker-alt:hover,
+.fa-phone-square-alt:hover,
+.fa-fax:hover {
+  color: red;
+  transform: scale(1.2);
+}
+iframe {
+  width: 500px;
+  height: 250px;
+}
+
+#back {
+  display: block;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+  color: #fcfaf2;
+  box-shadow: black 0px 1px 1px;
+  font-size: 1.5rem;
+}
+#back:hover {
+  background-color: #fcfaf2;
+  color: #bdb0ba;
+}
+/* ------------聊天氣氣人--------------------- */
+.box {
+  width: 30%;
+  height: auto;
+  background-color: transparent;
+  position: fixed;
+  z-index: 900;
+  top: 50%;
+  left: 50px;
+}
+.box a {
+  display: block;
+  width: 15%;
+  height: 15%;
+  position: relative;
+}
+.box img {
+  width: 100%;
+  object-fit: cover;
+}
+.box span {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  text-align: right;
+  font-size: 2vh;
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+  top: 0;
+  left: 0;
+}
+
+.box span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 0.3vh;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -12px;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.box ul {
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.box ul > li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  box-sizing: border-box;
+}
+.box ul img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20%;
+}
+.box em {
+  font-size: 2vh;
+  color: white;
+}
+.box p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.box input {
+  margin: 0;
+  margin-right: 10px;
+  padding: 5% 20%;
+  font-size: 1vh;
+}
+.box button {
+  border: none;
+  cursor: pointer;
+  padding: 3%;
+  border-radius: 10px;
+}
+/* ---------------effect------------------ */
+.ok {
+  color: red;
+  font-weight: bold;
+}
+
+input:valid + .ok {
+  display: inline;
+}
+input:invalid + .ok {
+  display: none;
+}
+/* ------------------留言區------------ */
+.text {
+  width: 100%;
+  margin: auto;
+  background-color: #fafcf2;
+  overflow: hidden;
+}
+.item {
+  float: left;
+  position: relative;
+  box-shadow: #1c1c1c 1px 1px 10px;
+}
+.item:first-child {
+  width: 50%;
+}
+.item:first-child ~ .item {
+  width: 25%;
+}
+.item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fafcf2;
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.item:hover .txt {
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 10px;
+}
+.txt h1 {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.txt p {
+  font-size: 1.5rem;
+}
+/* ------------------1024px--------------------- */
+@media screen and (max-width: 1024px) {
+  .contact_us_page {
+    height: auto;
+  }
+  .contact_core {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .coreX_left {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coreX_left h1,
+  .coreX_left h2 {
+    text-align: center;
+  }
+  input {
+    width: 100%;
+  }
+  #comannd-text {
+    width: 50%;
+    padding: 10px;
+  }
+  input:last-child {
+    width: 120px;
+  }
+  #back {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .box {
+    display: none;
+  }
+  input {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #comannd-text {
+    width: auto;
+    padding: 0;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+  .item:first-child {
+    width: auto;
+  }
+  .item {
+    float: none;
+    width: 50%;
+  }
+  .item:first-child,
+  .item:last-child {
+    display: none;
+  }
+  .item:first-child ~ .item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .contact_us_page {
+    padding: 0;
+    margin: 0;
+  }
+  .coreX_left {
+    padding: 0;
+  }
+  .item:nth-child(4),
+  .item:nth-child(5),
+  .item:nth-child(2) {
+    display: none;
+  }
+}

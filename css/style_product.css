@@ -1,0 +1,816 @@
+@import url(reset.css);
+
+body {
+  font-family: Noto Sans, Calisto MT;
+  line-height: 1.6;
+  cursor: default;
+}
+html {
+  font-size: 62.5%;
+}
+/* -----------------主體------------------ */
+.wrapper {
+  max-width: 1200px;
+  min-width: 428px;
+  margin: 0 auto;
+  background-color: #bdc0ba;
+}
+/* ------------------logo+menu----------------------- */
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+  position: relative;
+}
+header img {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 0 auto;
+}
+header > a {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+header b {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: black 3px 2px 5px;
+}
+header b:nth-child(1) {
+  transform: translateY(-10px);
+}
+header b:nth-child(3) {
+  transform: translateY(10px);
+}
+/* ------------------------js動作 class--------------------- */
+.hide {
+  width: 30%;
+  height: 110vh;
+  background-color: white;
+  opacity: 0.9;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: 106;
+  transition: 2s;
+  box-shadow: #1c1c1c 1px 1px 10px;
+}
+/* --------------------------menu---------------------------------------- */
+#menu {
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+#menu li {
+}
+#menu:hover li {
+  display: block;
+}
+#menu a {
+  display: block;
+  font-size: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+  color: #bdc0ba;
+  text-shadow: black 1px 1px 1px;
+}
+
+#menu a:hover {
+  background-color: #1c1c1c;
+  color: #fcfaf2;
+}
+/* ----------------------swipper 輪播區塊--------------------------- */
+.swiper-container {
+  width: 100%;
+  height: 80vh;
+  box-shadow: 1px 1px 5px black;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  text-align: center;
+  text-shadow: 1px 1px 5px #1c1c1c;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 10vh;
+  font-weight: 800;
+  margin: 10% 0 2%;
+}
+
+.swiper-slide .text {
+  font-size: 3vh;
+  display: block;
+  font-weight: 900;
+  width: 100%;
+  margin: 0 auto;
+  height: 50%;
+  line-height: 2;
+}
+
+.box1 {
+  background-image: url(../img/product/herobg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.box2 {
+  background-image: url(../img/product/herobg7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.box3 {
+  background-image: url(../img/product/herobg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.box4 {
+  background-image: url(../img/product/herobg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.box5 {
+  background-image: url(../img/product/herobg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* -------------------介紹區塊1------------------------- */
+.japan_style {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.japan_style a:first-child {
+  text-decoration: none;
+  display: block;
+}
+.japan_style a > h2 {
+  text-align: right;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+.japan_style > h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fcfaf2;
+  margin-bottom: 50px;
+}
+.japan_style > h1:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #1c1c1c;
+}
+.japan_style_core {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.527) 1px 1px 10px;
+}
+.japan_style_left {
+  background-image: url(../img/product/japanstyle750pxbg.jpg);
+  width: 50%;
+  padding: 50px 20px;
+}
+.japan_style_left h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.japan_style_left h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.japan_style_left p {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 2;
+  transition: 0.5s;
+}
+.japan_style_right {
+  width: 53%;
+  display: flex;
+}
+.japan_style_right img {
+  display: block;
+  width: 100%;
+  filter: grayscale(1);
+  transition: 1.3s;
+}
+.japan_style_core:hover .japan_style_left h1,
+.japan_style_core:hover .japan_style_left h2,
+.japan_style_core:hover .japan_style_left p {
+  transform: scale(1.2);
+}
+
+.japan_style_core:hover .japan_style_right img {
+  filter: grayscale(0);
+  transform: scale(0.9);
+  border-radius: 20px;
+}
+.japan_style a:nth-of-type(2) {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+}
+.japan_style a:nth-of-type(2):hover {
+  background-color: #fcfaf2;
+  color: #1c1c1c;
+  box-shadow: gray 5px 5px 5px;
+}
+
+/* -------------------west--------------------- */
+.west_style {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.west_style > h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fcfaf2;
+  margin-bottom: 50px;
+}
+
+.west_style > h1:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #1c1c1c;
+}
+.west_style_core {
+  box-shadow: rgba(0, 0, 0, 0.527) 1px 1px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.west_style_left {
+  width: 50%;
+}
+.west_style_left img {
+  display: block;
+  width: 100%;
+  height: 385px;
+  filter: brightness(0.5);
+  transition: 0.5s;
+}
+.west_style_left img:hover {
+  filter: brightness(1);
+}
+
+.west_style_right {
+  padding: 50px 20px;
+  width: 50%;
+  background-image: url(../img/product/japanstyle750pxbg.jpg);
+}
+
+.west_style_right h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.west_style_right h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.west_style_right p {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 2;
+  transition: 0.5s;
+}
+.west_style a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+}
+.west_style a:hover {
+  background-color: #fcfaf2;
+  color: #1c1c1c;
+  box-shadow: gray 5px 5px 5px;
+}
+.west_style_right:hover > h1,
+.west_style_right:hover > h2,
+.west_style_right:hover > p {
+  transform: scale(1.2);
+}
+/* ----------------small--------------------- */
+.small_style {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+.small_style > h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fcfaf2;
+  margin-bottom: 50px;
+}
+
+.small_style > h1:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #1c1c1c;
+}
+.small_style_core {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.527) 1px 1px 10px;
+}
+.small_style_top {
+  width: 100%;
+}
+.small_style_top img {
+  display: block;
+  width: 100%;
+  filter: blur(3px);
+  transition: 1s;
+}
+.small_style_top img:hover {
+  filter: blur(0);
+}
+.small_style_bottom {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/product/japanstyle750pxbg.jpg);
+}
+
+.small_style_bottom h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.small_style_bottom h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.small_style_bottom p {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 2;
+  transition: 0.5s;
+}
+.small_style_bottom a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin: 50px auto;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+}
+.small_style a:hover {
+  background-color: #fcfaf2;
+  color: #1c1c1c;
+  box-shadow: gray 5px 5px 5px;
+}
+
+.small_style_bottom:hover > h1,
+.small_style_bottom:hover > h2,
+.small_style_bottom:hover > p {
+  transform: scale(1.07);
+}
+.bottom_text {
+  width: 98%;
+  position: relative;
+  padding-bottom: 30%;
+  margin: 50px 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 75% 25%;
+  background-image: url(../img/product/bg.jpg);
+}
+.bottom_text p {
+  width: 70%;
+  line-height: 2;
+  display: block;
+  font-size: 3.2rem;
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  color: #fcfaf2;
+  text-shadow: black 1px 1px 10px;
+}
+.bottom_text > a {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 300;
+}
+.bottom_text > a img {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+/* -------------footer---------------- */
+footer {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+  box-sizing: border-box;
+  background-position: 10% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/product/MeyerTrioplan75mmf2.81.jpg);
+}
+
+footer h1 {
+  font-size: 2.4rem;
+  margin-top: 150px;
+  text-align: center;
+  color: #fcfaf2;
+  margin-bottom: 20px;
+  text-shadow: white 1px 2px 10px;
+}
+footer h1:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 10px;
+  background-color: #fcfaf2;
+  box-shadow: grey 5px 5px 5px;
+}
+footer h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fcfaf2;
+  text-shadow: white 1px 2px 10px;
+}
+footer a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  color: #fcfaf2;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+footer a:hover {
+  background-color: #fcfaf2;
+  color: #1c1c1c;
+  box-shadow: gray 5px 5px 5px;
+}
+/* ------------------------------------ */
+.footer_bottom {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-bottom: 1%;
+  background-color: #fcfaf2;
+}
+.footer_bottom ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* ----------------------gototop----------------------- */
+  .gototop {
+    position: fixed;
+    right: 50px;
+    bottom: 10%;
+  }
+  .gototop img {
+    width: 7vh;
+  }
+  /* --------------------------menu------------------------- */
+  .hide {
+    height: auto;
+  }
+  #menu {
+    width: 50%;
+  }
+  #menu a {
+    font-size: 3vh;
+    line-height: 10vh;
+  }
+  /* --------商品表------------- */
+  .japan_style > h1 {
+    color: #1c1c1c;
+  }
+  .japan_style > h1:after {
+    background-color: #fcfaf2;
+  }
+  .japan_style_core {
+    width: 100%;
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
+  }
+  .japan_style_core ::after {
+    content: "";
+    width: 70%;
+    height: 50%;
+    background-color: #fcfaf2;
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    margin: auto;
+    z-index: -1;
+    opacity: 0.1;
+  }
+
+  .japan_style_left {
+    width: 100%;
+    background-size: cover;
+    color: #fcfaf2;
+    text-shadow: 1px 1px 1px black;
+    background-repeat: no-repeat;
+    line-height: 2;
+    border-radius: 20px;
+    background-image: url(../img/product/nikonnikkor105mmf2.56.jpg);
+  }
+
+  .japan_style_left h1 {
+    margin: 10px;
+  }
+  .japan_style_left h2 {
+    margin: 10px;
+  }
+  .japan_style_right {
+    display: none;
+  }
+  /* ---------west--------- */
+
+  .west_style > h1 {
+    color: #1c1c1c;
+  }
+  .west_style > h1:after {
+    background-color: #fcfaf2;
+  }
+  .west_style_left {
+    display: none;
+  }
+  .west_style_core {
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+  }
+  .west_style_right {
+    color: #fcfaf2;
+    text-shadow: 1px 1px 1px black;
+    background-repeat: no-repeat;
+    line-height: 3;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    column-count: 2;
+    z-index: 1;
+    column-gap: 10px;
+    background-image: url(../img/product/ContaxCarlZeissTessarT45mmF2.8AEJ1.jpg);
+    position: relative;
+  }
+  .west_style_right::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fcfaf2;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    margin: auto;
+    opacity: 0.1;
+  }
+
+  .west_style_right h1 {
+    margin: 10px;
+    font-size: 2.8vh;
+  }
+  .west_style_right h2 {
+    margin: 10px;
+    font-size: 2vh;
+  }
+  .west_style_right:hover > h1,
+  .west_style_right:hover > h2,
+  .west_style_right:hover > p {
+    transform: none;
+  }
+  /* ---------------small---------------------- */
+  .small_style_core {
+    box-shadow: none;
+  }
+  .small_style > h1 {
+    color: #1c1c1c;
+  }
+  .small_style > h1:after {
+    background-color: #fcfaf2;
+  }
+  .small_style_top {
+    display: none;
+  }
+  .small_style_bottom {
+    background-image: url(../img/product/HELIOS44-258mmF214.jpg);
+    color: #fcfaf2;
+    text-shadow: 1px 1px 1px black;
+    background-repeat: no-repeat;
+    line-height: 3;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  /* -------------footer--------------------- */
+  .bottom_text {
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px 0;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  .bottom_text p {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 5vh;
+    line-height: 1.5;
+    position: unset;
+  }
+  .footer_bottom {
+    padding: 0;
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 430px) {
+  #menu {
+    width: 50%;
+  }
+  .japan_style > h1,
+  .small_style > h1,
+  .west_style > h1 {
+    margin-bottom: 20px;
+  }
+  .japan_style a:nth-of-type(2),
+  .west_style a {
+    margin-top: 20px;
+  }
+  .west_style,
+  .small_style {
+    margin-top: 20px;
+  }
+  .small_style_bottom h1,
+  .small_style_bottom h2,
+  .small_style_bottom p {
+    line-height: 2;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .small_style_bottom {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .small_style_bottom a {
+    margin: 0 auto;
+  }
+
+  .bottom_text {
+    margin: 20px 0;
+    background-image: url(../img/pinterest/lion.jpg);
+    background-size: contain;
+  }
+  footer h1 {
+    margin: 0;
+    color: #1c1c1c;
+  }
+  footer h1:after {
+    background-color: #1c1c1c;
+    box-shadow: none;
+    margin: 10px auto;
+  }
+  footer h2 {
+    color: #1c1c1c;
+  }
+  .footer_bottom {
+    font-size: 2vh;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .bottom_text > a {
+    width: 10vh;
+    height: 10vh;
+  }
+  .bottom_text > a img {
+    width: 100%;
+    height: 100%;
+  }
+}
