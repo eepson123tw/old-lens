@@ -2,16 +2,7 @@
 (function() {
 
 
-    //index.html 切換動畫
-    // var myAnimation = new hoverEffect({
-    // parent: document.querySelector('div .hero'),
-    // intensity: 0.1,
-    // easing:'Expo.easeOut',
-    // image1: 'img/homepageimg/sakurabg.jpg',
-    // image2: 'img/homepageimg/hero1200px2.jpg',
-    // displacementImage: 'img/homepageimg/nail.jpg',
-    // });
-    // 表單效果
+
 
     const a = $(`header>a`)
 
