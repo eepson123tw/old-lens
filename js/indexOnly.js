@@ -30,12 +30,15 @@
 
         let canvas = document.querySelector('canvas');
 
-        if (sidewidth < 768) {
+        if (canvas) {
+            if (sidewidth < 768) {
 
-            canvas.style.opacity = 0;
-        } else {
-            canvas.style.opacity = 1;
+                canvas.style.opacity = 0;
+            } else {
+                canvas.style.opacity = 1;
+            }
         }
+
 
     };
 
