@@ -1,257 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="#">
-	<script src="node_modules/three/build/three.min.js"></script>
-    <script src="node_modules/gsap/src/minified/TweenMax.min.js"></script>
-	<script src="node_modules/hover-effect/dist/hover-effect.umd.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css' integrity='sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA==' crossorigin='anonymous' />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js' integrity='sha512-XI02ivhfmEfnk8CEEnJ92ZS6hOqWoWMKF6pxF/tC/DXBVxDXgs2Kmlc9CHA0Aw2dX03nrr8vF54Z6Mqlkuabkw==' crossorigin='anonymous'></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<title>老鏡漫旅</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>老鏡漫旅</title>
 </head>
+
 <body>
-	  <div class="gototop">
-		<a href="#"><img src="img/homepageimg/gototop115px.png" alt=""></a>
-	</div>
-	<div class="wrapper">
-		<header>
-			<img src="img/homepageimg/log-115px.png" alt="">
-			<a href="#">
-				<b></b>
-				<b></b>
-				<b></b>
-			</a>
+    <div class="gototop">
+        <a href="#"><img src="img/homepageimg/gototop115px.png" alt=""></a>
+    </div>
+    <div class="wrapper">
+        <header>
+            <img src="img/homepageimg/log-115px.png" alt="">
+            <a href="#">
+                <b></b>
+                <b></b>
+                <b></b>
+            </a>
             <ul id="menu">
-				<li><a href="index.html">Homepage</a></li>
+                <li><a href="index.html">Homepage</a></li>
                 <li><a href="story.html">Story</a></li>
                 <li><a href="product.html">Product
-					<ul>
-						<li><a href="japan_style.html">日式銀鹽</a></li>
-						<li><a href="#">西式重烘</a></li>
-						<li><a href="#">微距特調</a></li>
-					</ul>
-				</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="Player_recommand.html">Player Comment</a></li>
-                <li><a href="contact.us.html">Contect us</a></li>
+						<ul>
+							<li><a href="japan_style.html">日式銀鹽</a></li>
+                <li><a href="#">西式重烘</a></li>
+                <li><a href="#">微距特調</a></li>
             </ul>
-		</header>
-		<div class="hero">
-			<h1>老鏡漫旅</h1>
-			<p>尋找獨一無二的老鏡,<br>
-               拍出屬於你的浪漫，<br>
-               記錄人生每秒的永恆。
+            </a>
+            </li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="Player_recommand.html">Player Comment</a></li>
+            <li><a href="contact.us.html">Contect us</a></li>
+            </ul>
+        </header>
+        <div class="hero">
+            <h1>老鏡漫旅</h1>
+            <p>尋找獨一無二的老鏡,<br> 拍出屬於你的浪漫，
+                <br> 記錄人生每秒的永恆。
             </p>
-		</div>
-		<div class="scroll">
-			<h1>scroll</h1>
-		</div>
-		<div class="side_menu">
-			<a href="#"><i class="fab fa-elementor"></i></a>
-				<ul>
-					<li class="japan_target"><a href="#japan_point">日式銀鹽</a></li>
-					<li class="west_target"><a href="#west_style">西式重烘</a></li>
-					<li class="small_target"><a href="#small-2">微距特調</a></li>
-					<li class="intro_target"><a href="#myimg">焦段介紹</a></li> 
-					<li class="company_target"><a href="#shop">合作夥伴們</a></li>
-					<li class="command_target"><a href="#recommend">玩家推薦</a></li>
-					<li class="about_target"><a href="#icon1">關於我們</a></li>
-				</ul>
-		</div>
-		<div class="jappan-style">
-			<img src="img/homepageimg/japanstyle750px_bg.jpg" alt="" id="jappan_bg">
-			<div class="japan-text">
-			<h1 id="japan_point">日式銀鹽</h1>
-			<div id="traget01"></div>
-			<h2>Nikon NIKKOR 50mm F1.2 <span>Ai-S</span></h2>
-			<p>NIKKOR 50mm F1.2是Nikon 50mm<span>標準定焦鏡</span><br>頭中最銳利的鏡頭, 光圈全開f/1.2即<span>是可用光圈</span>,<br> 光圈收在f/2時解像力達到最高, 銳利<span>度銳到無敵</span>.<br>
-            本鏡頭為Ai-S版本, 最特別的是擁有的<span>光圈葉片數</span><br>量是9片, 比其他版本只有7片光圈葉<span>片數, Ai-S版</span><br>本能拍攝出非常更吸引人的18道星芒<span>及光圈散景.</span><br> 
-            拍攝的成像細節絲毫不馬虎, 銳利度的<span>強勁表露無</span><br>
-            遺, 層次分明, 空間感十足. 大光圈f/1.<span>2散景非常</span><br>
-        	出色, 獨特的迷霧散景風味, 看過就很<span>難忘懷</span>.</p>
-			<a href="japan_style.html">了解更多</a>
-			</div>
-			<a href="img/homepageimg/jappanesestyle670px.jpg" data-lightbox='roadtrip' data-title="巷口的舊機車" ><img src="img/homepageimg/jappanesestyle670px.jpg" alt="" id="jappan_view"></a>
-		</div>
-		<div class="west-style" id="west_style">
-			<a href="img/homepageimg/weststyle570px1.jpg" data-lightbox='roadtrip' data-title="斑駁的座位"><img src="img/homepageimg/weststyle570px1.jpg" alt="" id="img-1"></a>
-			<a href="img/homepageimg/weststyle570px2.jpg" data-lightbox='roadtrip' data-title="感動的瞬間"><img src="img/homepageimg/weststyle570px2.jpg" alt=""id="img-2"></a>
-			<a href="img/homepageimg/weststyle570px3.jpg" data-lightbox='roadtrip' data-title="記憶的老牆"><img src="img/homepageimg/weststyle570px3.jpg" alt=""id="img-3"></a>
-			<div class="west-style-text">
-				<div id="traget02"></div>
-				<h1 id="west_point">西式重烘</h1>
-				<h2>Contax Carl Zeiss T Planar 85mm F1.4 AEG</h2>
-				<p>經典的85mm人像鏡，很有自己獨特鮮明的風格，光圈全開跟收至2.8、5.6後的表現幾乎是三顆不一樣的鏡頭，總是帶給你滿滿的驚喜，也因為這樣曾被人譽為「和偶像結婚後的生活」。</p>
-				<a href="#idontwanttogoanywhere" class="none" onclick="notyet();">了解更多</a>
+        </div>
+        <div class="scroll">
+            <h1>scroll</h1>
+        </div>
+        <div class="side_menu">
+            <a href="#"><i class="fab fa-elementor"></i></a>
+            <ul>
+                <li class="japan_target"><a href="#japan_point">日式銀鹽</a></li>
+                <li class="west_target"><a href="#west_style">西式重烘</a></li>
+                <li class="small_target"><a href="#small-2">微距特調</a></li>
+                <li class="intro_target"><a href="#myimg">焦段介紹</a></li>
+                <li class="company_target"><a href="#shop">合作夥伴們</a></li>
+                <li class="command_target"><a href="#recommend">玩家推薦</a></li>
+                <li class="about_target"><a href="#icon1">關於我們</a></li>
+            </ul>
+        </div>
+        <div class="jappan-style">
+            <img src="img/homepageimg/japanstyle750px_bg.jpg" alt="" id="jappan_bg">
+            <div class="japan-text">
+                <h1 id="japan_point">日式銀鹽</h1>
+                <div id="traget01"></div>
+                <h2>Nikon NIKKOR 50mm F1.2 <span>Ai-S</span></h2>
+                <p>NIKKOR 50mm F1.2是Nikon 50mm<span>標準定焦鏡</span><br>頭中最銳利的鏡頭, 光圈全開f/1.2即<span>是可用光圈</span>,<br> 光圈收在f/2時解像力達到最高, 銳利<span>度銳到無敵</span>.<br> 本鏡頭為Ai-S版本, 最特別的是擁有的<span>光圈葉片數</span><br>量是9片, 比其他版本只有7片光圈葉
+                    <span>片數,
+						Ai-S版</span><br>本能拍攝出非常更吸引人的18道星芒<span>及光圈散景.</span><br> 拍攝的成像細節絲毫不馬虎, 銳利度的
+                    <span>強勁表露無</span><br> 遺, 層次分明, 空間感十足. 大光圈f/1.<span>2散景非常</span><br> 出色, 獨特的迷霧散景風味, 看過就很
+                    <span>難忘懷</span>.
+                </p>
+                <a href="japan_style.html">了解更多</a>
+            </div>
+            <a href="img/homepageimg/jappanesestyle670px.jpg" data-lightbox='roadtrip' data-title="巷口的舊機車"><img src="img/homepageimg/jappanesestyle670px.jpg" alt="" id="jappan_view"></a>
+        </div>
+        <div class="west-style" id="west_style">
+            <a href="img/homepageimg/weststyle570px1.jpg" data-lightbox='roadtrip' data-title="斑駁的座位"><img src="img/homepageimg/weststyle570px1.jpg" alt="" id="img-1"></a>
+            <a href="img/homepageimg/weststyle570px2.jpg" data-lightbox='roadtrip' data-title="感動的瞬間"><img src="img/homepageimg/weststyle570px2.jpg" alt="" id="img-2"></a>
+            <a href="img/homepageimg/weststyle570px3.jpg" data-lightbox='roadtrip' data-title="記憶的老牆"><img src="img/homepageimg/weststyle570px3.jpg" alt="" id="img-3"></a>
+            <div class="west-style-text">
+                <div id="traget02"></div>
+                <h1 id="west_point">西式重烘</h1>
+                <h2>Contax Carl Zeiss T Planar 85mm F1.4 AEG</h2>
+                <p>經典的85mm人像鏡，很有自己獨特鮮明的風格，光圈全開跟收至2.8、5.6後的表現幾乎是三顆不一樣的鏡頭，總是帶給你滿滿的驚喜，也因為這樣曾被人譽為「和偶像結婚後的生活」。</p>
+                <a href="#idontwanttogoanywhere" class="none" onclick="notyet();">了解更多</a>
 
-			</div>
-		</div>
-		<div class="small-style">
-			<ul>
-				<li id="small-1">
-					<a href="img/homepageimg/lightbox (2).jpg" data-lightbox='roadtrip' data-title="耀光的蘆葦"></a>
-					</li>
-				<li id="small-2">
-					<a href="img/homepageimg/lightbox (3).jpg" data-lightbox='roadtrip' data-title="妳的側臉"></a>
-					</li>
-				<li id="small-3" >
-					<a href="img/homepageimg/lightbox (5).jpg" data-lightbox='roadtrip' data-title="捲曲的葉子"></a>
-					</li>
-				<li id="small-4" >
-					<a href="img/homepageimg/lightbox (1).jpg" data-lightbox='roadtrip' data-title="我在哪?我是誰?"></a>
-				</li>
-				<li id="small-5">
-					<a href="img/homepageimg/lightbox (4).jpg" data-lightbox='roadtrip' data-title="採蜜囉~~"></a>
-					</li>
-				<li class="small-style-text">
-				<h1>微距特調</h1>
-				<div id="traget03"></div>
-				<h2>HELIOS 44-2 58mm F2</h2>
-				<p>helios-44-2前蘇聯產，仿照蔡司小B的結構，光圈前置，八個光圈葉片，被攝影愛好者稱爲八羽怪，在一定的背景條件下（如果灌木，樹從等等），焦外可以旋轉。很有可玩性！收藏，使用均是佳品。</p>
-				<a href="#idontwanttogoanywhere" class="none" onclick="notyet();">了解更多</a>
-				</li>
-			</ul>
-		</div>
-		<main>
-			<img src="img/homepageimg/choosef_bg1.jpg" alt="" id="myimg"> 
-			<div class="main-text">
-			<h1>焦段效果介紹</h1>
-			<div class="btn_style">
-				<div id="traget04"></div>
-				<ul>
-					<li><a href="javascript: void(0)" id="btn_red"></a></li>
-					<li><a href="javascript: void(0)" id="btn_green"></a></li>
-					<li><a href="javascript: void(0)" id="btn_white"></a></li>
-				</ul>
-			</div>
-			<p id="textchange">每顆鏡頭上面標示的焦段皆不盡相同，而標示不同的焦段，代表什麼意思呢? 代表你可以用這顆鏡頭 “拍的多遠、拍的多廣” 的意思。接下來來體驗看看，不同的焦段拍出的不同效果吧。</p>
-			</div>
-			<ul id="choose">
-				<li id="change-1" data-num="1">25mm</li>
-				<li id="change-2" data-num="2">50mm</li>
-				<li id="change-3" data-num="3">80mm</li>
-				<li id="change-4" data-num="4">105mm</li>
-				<li id="change-5" data-num="5">微距</li>
-			</ul>
-		</main>
-		<div class="recommend" id="shop">
-			<h1>Recommend  Shop</h1>
-			<div id="traget05"></div>
-			<h2>合作夥伴們</h2>
-			<ul id="recommend-core">
-				<li>
-					<div class="recommend-img">
-					<img src="img/homepageimg/store1.jpg" alt="">
-					</div>
-					<h3>老鏡新生|新北汐止</h3>
-					<h1>聽......是悅耳的機械快門交響樂!</h1>
-					<p>如果可以我想把我所有的錢，全部拿來買鏡頭，余老闆自豪地說道，一日老鏡人，終生老鏡人。
-						他發願只要跟他一樣是同道中人，一定給他最優惠的價格，只要你敢開口，余老闆就敢賣。
-					</p>
-				</li>
-				<li>
-					<div class="recommend-img">
-					<img src="img/homepageimg/store2.jpg" alt="">
-					</div>
-					<h3>機械邊城|新北汐止</h3>
-					<h1>開業20餘年，只為分享最美的瞬間。</h1>
-					<p>陳老闆最喜歡跟他的顧客談天，只要扯到他最愛的萊卡鏡頭，他就能說上個一下午不停歇，客人常常說他是最愛聊天的老闆。
-						但老闆表示誤會他了，他沉默寡言，一定是客人認錯人了!
-					</p>
-				</li>
-				<li>
-					<div class="recommend-img">
-					<img src="img/homepageimg/store3.jpg" alt="">
-					</div>
-					<h3>史萊姆的第二個窩|新北汐止</h3>
-					<h1>因機械鏡頭負債,也因鏡頭廣結良緣。</h1>
-					<p>要買老鏡就非得提到，人稱老許的許董，從稀有的萬倫沙鏡頭初版，到最新的索尼自動對焦廣角鏡頭，許董應有盡有，但他老人家有時候忘記出貨，這又是另一個故事了。。。。。。</p>
-				</li>
-			</ul>
-			<a href="shop.html">了解更多</a>
-		</div>
-		<div class="recommend_player" id="recommend">
-			<div id="traget06"></div>
-			<h1>More Recommend By Player</h1>
-			<h2>玩家推薦</h2>
-			<a href="Player_recommand.html">了解更多</a>
-		</div>
-		<div class="member">
-			<h1>老鏡漫旅</h1>
-			<div id="traget07"></div>
-			<div class="member_task">
-				<img src="img/homepageimg/log-115px.png" alt="">
-				<p>機械鏡頭工作室。<br>
-					希望能將機械鏡頭的美好，呈現給玩家。
-					讓我們一起用力拍起來!</p>
-				<ul>
-					<li><a href="" id="icon1"></a></li>
-					<li><a href="" id="icon2"></a></li>
-					<li><a href="" id="icon3"></a></li>
-					<li><a href="" id="icon4"></a></li>
-				</ul>
-			</div>
-			<div class="member_text">
-				<ul>
-					<li>
-						<p>攝影師兼模特兒，
-							最喜歡在初夏及入冬時拍照，因為光線最多變化，喜歡日式風格的冷光潔白感!
-							</p>
-						<img src="img/homepageimg/member1.jpg" alt="">
-						<h1>Ruby</h1>
-					</li>
-					<li>
-						<p>原本是會計師的他，因為喜歡記錄生活，不小心誤入歧途，月底收帳單時都不敢回家，喜歡微距的細節。
+            </div>
+        </div>
+        <div class="small-style">
+            <ul>
+                <li id="small-1">
+                    <a href="img/homepageimg/lightbox (2).jpg" data-lightbox='roadtrip' data-title="耀光的蘆葦"></a>
+                </li>
+                <li id="small-2">
+                    <a href="img/homepageimg/lightbox (3).jpg" data-lightbox='roadtrip' data-title="妳的側臉"></a>
+                </li>
+                <li id="small-3">
+                    <a href="img/homepageimg/lightbox (5).jpg" data-lightbox='roadtrip' data-title="捲曲的葉子"></a>
+                </li>
+                <li id="small-4">
+                    <a href="img/homepageimg/lightbox (1).jpg" data-lightbox='roadtrip' data-title="我在哪?我是誰?"></a>
+                </li>
+                <li id="small-5">
+                    <a href="img/homepageimg/lightbox (4).jpg" data-lightbox='roadtrip' data-title="採蜜囉~~"></a>
+                </li>
+                <li class="small-style-text">
+                    <h1>微距特調</h1>
+                    <div id="traget03"></div>
+                    <h2>HELIOS 44-2 58mm F2</h2>
+                    <p>helios-44-2前蘇聯產，仿照蔡司小B的結構，光圈前置，八個光圈葉片，被攝影愛好者稱爲八羽怪，在一定的背景條件下（如果灌木，樹從等等），焦外可以旋轉。很有可玩性！收藏，使用均是佳品。
+                    </p>
+                    <a href="#idontwanttogoanywhere" class="none" onclick="notyet();">了解更多</a>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <img src="img/homepageimg/choosef_bg1.jpg" alt="" id="myimg">
+            <div class="main-text">
+                <h1>焦段效果介紹</h1>
+                <div class="btn_style">
+                    <div id="traget04"></div>
+                    <ul>
+                        <li>
+                            <a href="javascript: void(0)" id="btn_red"></a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)" id="btn_green"></a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)" id="btn_white"></a>
+                        </li>
+                    </ul>
+                </div>
+                <p id="textchange">每顆鏡頭上面標示的焦段皆不盡相同，而標示不同的焦段，代表什麼意思呢? 代表你可以用這顆鏡頭 “拍的多遠、拍的多廣” 的意思。接下來來體驗看看，不同的焦段拍出的不同效果吧。
+                </p>
+            </div>
+            <ul id="choose">
+                <li id="change-1" data-num="1">25mm</li>
+                <li id="change-2" data-num="2">50mm</li>
+                <li id="change-3" data-num="3">80mm</li>
+                <li id="change-4" data-num="4">105mm</li>
+                <li id="change-5" data-num="5">微距</li>
+            </ul>
+        </main>
+        <div class="recommend" id="shop">
+            <h1>Recommend Shop</h1>
+            <div id="traget05"></div>
+            <h2>合作夥伴們</h2>
+            <ul id="recommend-core">
+                <li>
+                    <div class="recommend-img">
+                        <img src="img/homepageimg/store1.jpg" alt="">
+                    </div>
+                    <h3>老鏡新生|新北汐止</h3>
+                    <h1>聽......是悅耳的機械快門交響樂!</h1>
+                    <p>如果可以我想把我所有的錢，全部拿來買鏡頭，余老闆自豪地說道，一日老鏡人，終生老鏡人。 他發願只要跟他一樣是同道中人，一定給他最優惠的價格，只要你敢開口，余老闆就敢賣。
+                    </p>
+                </li>
+                <li>
+                    <div class="recommend-img">
+                        <img src="img/homepageimg/store2.jpg" alt="">
+                    </div>
+                    <h3>機械邊城|新北汐止</h3>
+                    <h1>開業20餘年，只為分享最美的瞬間。</h1>
+                    <p>陳老闆最喜歡跟他的顧客談天，只要扯到他最愛的萊卡鏡頭，他就能說上個一下午不停歇，客人常常說他是最愛聊天的老闆。 但老闆表示誤會他了，他沉默寡言，一定是客人認錯人了!
+                    </p>
+                </li>
+                <li>
+                    <div class="recommend-img">
+                        <img src="img/homepageimg/store3.jpg" alt="">
+                    </div>
+                    <h3>史萊姆的第二個窩|新北汐止</h3>
+                    <h1>因機械鏡頭負債,也因鏡頭廣結良緣。</h1>
+                    <p>要買老鏡就非得提到，人稱老許的許董，從稀有的萬倫沙鏡頭初版，到最新的索尼自動對焦廣角鏡頭，許董應有盡有，但他老人家有時候忘記出貨，這又是另一個故事了。。。。。。</p>
+                </li>
+            </ul>
+            <a href="shop.html">了解更多</a>
+        </div>
+        <div class="recommend_player" id="recommend">
+            <div id="traget06"></div>
+            <h1>More Recommend By Player</h1>
+            <h2>玩家推薦</h2>
+            <a href="Player_recommand.html">了解更多</a>
+        </div>
+        <div class="member">
+            <h1>老鏡漫旅</h1>
+            <div id="traget07"></div>
+            <div class="member_task">
+                <img src="img/homepageimg/log-115px.png" alt="">
+                <p>機械鏡頭工作室。<br> 希望能將機械鏡頭的美好，呈現給玩家。 讓我們一起用力拍起來!
+                </p>
+                <ul>
+                    <li>
+                        <a href="" id="icon1"></a>
+                    </li>
+                    <li>
+                        <a href="" id="icon2"></a>
+                    </li>
+                    <li>
+                        <a href="" id="icon3"></a>
+                    </li>
+                    <li>
+                        <a href="" id="icon4"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="member_text">
+                <ul>
+                    <li>
+                        <p>攝影師兼模特兒， 最喜歡在初夏及入冬時拍照，因為光線最多變化，喜歡日式風格的冷光潔白感!
+                        </p>
+                        <img src="img/homepageimg/member1.jpg" alt="">
+                        <h1>Ruby</h1>
+                    </li>
+                    <li>
+                        <p>原本是會計師的他，因為喜歡記錄生活，不小心誤入歧途，月底收帳單時都不敢回家，喜歡微距的細節。
 
-							</p>
-						<img src="img/homepageimg/member2.jpg" alt="">
-						<h1>LEO</h1>
-					</li>
-					<li>
-						<p>旅居世界的外國人，
-							leica合作攝影師，最喜歡用機械鏡頭拍攝。喜歡在午後喝杯小酒後開始修圖!
-							</p>
-						<img src="img/homepageimg/member3.jpg" alt="">
-						<h1>Allen</h1>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-		<figure>
-			<figcaption>千與千尋</figcaption>
-			<audio controls="controls"  autoplay  loop="loop">
-				<source src="bgMusic/いのちの名前 (inochi no namae) 木村弓 (千と千尋の神隠し)【歌枠切り抜き】(20200421) Hoshimachi.mp3" type="audio/ogg" />
-					Your browser does not support the
+                        </p>
+                        <img src="img/homepageimg/member2.jpg" alt="">
+                        <h1>LEO</h1>
+                    </li>
+                    <li>
+                        <p>旅居世界的外國人， leica合作攝影師，最喜歡用機械鏡頭拍攝。喜歡在午後喝杯小酒後開始修圖!
+                        </p>
+                        <img src="img/homepageimg/member3.jpg" alt="">
+                        <h1>Allen</h1>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <figure>
+            <figcaption>千與千尋</figcaption>
+            <audio controls="controls" autoplay loop="loop">
+				<source
+					src="bgMusic/いのちの名前 (inochi no namae) 木村弓 (千と千尋の神隠し)【歌枠切り抜き】(20200421) Hoshimachi.mp3"
+					type="audio/ogg"
+				/>
+				Your browser does not support the
 			</audio>
-		</figure>
-		<footer>
-			<ul>
-				<li><button><a href="#">contact us</a></button></li>
-				<li><h1>© 2020 All Rights Reserved.</h1></li>
-		        <li><h1>Privacy Policy Terms of Service</h1></li>
-			</ul>
-		</footer>
+        </figure>
+        <footer>
+            <ul>
+                <li><button><a href="#">contact us</a></button></li>
+                <li>
+                    <h1>© 2020 All Rights Reserved.</h1>
+                </li>
+                <li>
+                    <h1>Privacy Policy Terms of Service</h1>
+                </li>
+            </ul>
+        </footer>
 
 
 
-	</div>
+    </div>
 
 
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js' integrity='sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==' crossorigin='anonymous'></script>
 
-
-<script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
-<script src="js/indexOnly.js"></script>
+    <script src="js/indexOnly.js"></script>
+    <!-- <script src="js/hover.js"></script> -->
 
 
 
 </body>
+
 </html>
